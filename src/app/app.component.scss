@@ -1,0 +1,32 @@
+.app-title {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(34, 5, 161);
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 300px;
+
+}
+
+.nav-item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(119, 115, 115);
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgb(247, 231, 12);
+    color: rgb(11, 9, 109);
+    border: 1px solid rgb(194, 193, 193);
+    transform: scale(1.04);
+}

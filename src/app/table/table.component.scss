@@ -1,0 +1,36 @@
+.active {
+    background-color: rgb(247, 244, 206);
+    color: rgb(100, 99, 99);
+}
+
+.search {
+    padding: 10px 15px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 10px;
+    outline: none;
+    margin-left: 40px;
+}
+
+.search::placeholder {
+    color: rgb(151, 148, 148);
+    font-size: 15px;
+    
+}
+
+.table {
+    margin: 40px;
+
+}
+
+.table-head tr th {
+    color: rgb(100, 99, 99);
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid rgb(212, 209, 209);
+    padding: 10px;
+}
+
+.table-body tr td {
+    text-align: center;
+    border: 1px solid rgb(212, 209, 209); 
+}

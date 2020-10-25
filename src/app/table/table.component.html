@@ -1,0 +1,28 @@
+<div class="search-group">
+    <input type="text" class="search" placeholder="Search By Title"
+    [(ngModel)] = 'searchTerm'/>
+</div>
+<table class="table" matSort (matSortChange)="sortData($event)">
+    <thead class="table-head">
+        <tr>
+            <th mat-sort-header="ID">Id</th>
+            <th mat-sort-header="Title">Title</th>
+            <th>Description</th>
+            <th mat-sort-header="PageCount">PageCount</th>
+            <th >Excerpt</th>
+            <th mat-sort-header="PublishDate">PublishDate</th>            
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        <tr *ngFor="let book of books | booksFilter: searchTerm"  
+        [ngClass]="{active : selectedBook && selectedBook.ID === book.ID}"
+        (click) = 'selectBook(book)'>
+            <td>{{book.ID}}</td>
+            <td>{{book.Title}}</td>
+            <td>{{book.Description}}</td>
+            <td>{{book.PageCount}}</td>
+            <td>{{book.Excerpt}}</td>
+            <td>{{book.PublishDate | date : 'yyyy MMM, dd'}}</td>        
+        </tr>
+    </tbody>
+</table>
